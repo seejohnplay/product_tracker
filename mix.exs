@@ -22,6 +22,7 @@ defmodule ProductTracker.Mixfile do
     [
       {:ecto, "~> 2.1"},
       {:httpoison, "~> 0.13"},
+      {:mock, "~> 0.3.0", only: :test},
       {:poison, "~> 3.1"},
       {:postgrex, ">= 0.0.0"},
       {:quantum, ">= 2.2.0"},

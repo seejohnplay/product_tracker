@@ -16,3 +16,7 @@ config :product_tracker,
   jobs: [
     {"0 0 1 * *", {ProductTracker, :update_records, []}}
   ]
+
+if :test == Mix.env do
+  import_config "test.exs"
+end
